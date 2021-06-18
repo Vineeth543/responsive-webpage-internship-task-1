@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+.navbar {
+  margin: 13px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.navbar__brand {
+  width: 110px;
+}
+
+.navbar__logo {
+  width: 100%;
+}
+
+.button__primary {
+  background-color: red;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+}
+
+.movies__section {
+  padding-left: 30px;
+  width: 100%;
+  height: 600px;
+  gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  flex-direction: column;
+  overflow-y: hidden;
+}
+
+.movie__genre {
+  padding: 10px;
+  padding-top: 20px;
+  color: white;
+  font-size: 30px;
+}
+
+.movies {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.movie__poster__img {
+  width: 300px;
+  height: 400px;
+}
+
+.poster {
+  border: 5px solid white;
+  width: 100%;
+  height: 100%;
+}
+
+.movie__title {
+  padding-top: 35px;
+  color: white;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 10px 50px #222222;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: red;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000;
+}
+
+.view__all {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 15px;
+}
+
+@media (min-width: 768px) {
+  ::-webkit-scrollbar-track {
+    box-shadow: none;
+    border-radius: 0;
+  }
+  .navbar__brand {
+    width: 140px;
+  }
+  .parent {
+    padding-top: 10px;
+    padding-bottom: 50px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .movie__poster__img {
+    width: 350px;
+    height: 450px;
+  }
+  .movies__section {
+    padding-left: 50px;
+    gap: 50px;
+  }
+}
+
+@media (min-width: 1200px) {
+  ::-webkit-scrollbar-track {
+    box-shadow: none;
+    border-radius: 0;
+  }
+  .navbar__brand {
+    width: 160px;
+  }
+  .parent {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .movie__poster__img {
+    width: 400px;
+    height: 500px;
+  }
+  .movies__section {
+    gap: 80px;
+  }
+}
